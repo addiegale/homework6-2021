@@ -113,14 +113,18 @@ a:visited{
     color: #0000EE;
   }
 
-  .gallery img{
-    display: flex;
+  .gallery{
+    display:flex;
     flex-wrap: wrap;
-    border: solid 10px #50C7C7;
-    margin: 10px;
-    flex-basis: 300px;
+    justify-content: center;
+    align-content: stretch;
   }
 
+  .gallery > img{
+    width: 300px;
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    }
 }
 
 
