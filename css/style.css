@@ -59,24 +59,63 @@ a:visited{
 }
 
 @media screen and (min-width: 850px){
-  header img nav{
-    position: fixed;
+  body{
+    font-family: "Alegreya Sans SC", serif;
+    background-color: #f1f1f1;
+    background-image: "../images/concrete_seamless.png";
+  }
+  
+  header img{
+    position: sticky;
+    top: 0;
   }
   
   .nav_links{
+    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: right;
   }
 
+  .pricing{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card{
+    display: flex;
+    display: wrap;
+    flex-direction: column;
+    flex-basis: 250px;
+  }
+
+  .card h3{
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding: 20px 0px 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .card_big{
+    align-items: stretch 450px;
+  }
+
+  a:visited{
+    color: #0000EE;
+  }
+
+  .gallery img{
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    flex-basis: 300px;
+  }
 
 }
 
 
-
 @media all and (prefers-reduced-motion:reduce){
-	header img{
-		transition:none;
+  header img{
+		transition: none;
 		animation: none;
 	}
 }
