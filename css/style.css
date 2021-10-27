@@ -141,6 +141,25 @@ a:visited{
       flex-wrap: nowrap;
   }
 
+  .card {
+    display: flex;
+    border: 2px solid #45ADDD;
+    flex-basis: 250px;
+    flex-wrap: nowrap;
+  }
+
+  .card h3 {
+    background-color: #288088;
+  }
+
+  .card ul li:nth-child(odd)::before {
+    content: "\1F44D";
+  }
+
+  .card ul li:nth-child(even)::after {
+    content: "\1F44D";
+  }
+
   .gallery {
       display: none;
   }
@@ -149,27 +168,5 @@ a:visited{
       display: none;
   }
 
-  .card {
-      display: flex;
-      border: 2px solid #45ADDD;
-      flex-basis: 250px;
-      flex-wrap: nowrap;
-  }
-
-  .card h3 {
-      background-color: #288088;
-  }
-
-  .card ul li:nth-child(odd)::before {
-      content: "\1F44D";
-  }
-
-  .card ul li:nth-child(even)::after {
-      content: "\1F44D";
-  }
-
-  footer {
-      background-color: black;
-  }
 
 }
